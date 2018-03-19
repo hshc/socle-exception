@@ -1,0 +1,16 @@
+package fr.si2m.socle.exception.core;
+
+public interface ISi2mException {
+
+	public LogId getLogId();
+
+	public ContextDescriptor getContext();
+
+	public String getCode();
+
+	public String getLibelleCourt();
+
+	public String getMessage();
+
+	public NatureException getNature();
+}

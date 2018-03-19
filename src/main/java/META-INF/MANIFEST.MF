@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nta
+Build-Jdk: 1.6.0_34
+Implementation-Title: SOC
+Implementation-Vendor: SI2M
+Implementation-Version: 0.0.1-SNAPSHOT
+Specification-Title: socle-exception
+Specification-Vendor: HSH-MOA
+Specification-Version: N/A
+
