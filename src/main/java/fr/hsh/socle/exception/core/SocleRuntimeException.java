@@ -24,7 +24,7 @@ public abstract class SocleRuntimeException extends RuntimeException implements 
 		this.mLogId = lCause.getLogId();
 		this.mContext = lCause.getContext();
 		this.mCode = lCause.getCode();
-		this.mLibelleCourt = lCause.getLibelleCourt();
+		this.mLibelleCourt = lCause.getShortLabel();
 	}
 
 	protected SocleRuntimeException(final String pCode, final String pLibelleCourt, final Throwable pCause) {
@@ -41,7 +41,7 @@ public abstract class SocleRuntimeException extends RuntimeException implements 
 		this.mLogId = lCause.getLogId();
 		this.mContext = lCause.getContext();
 		this.mCode = lCause.getCode();
-		this.mLibelleCourt = lCause.getLibelleCourt();
+		this.mLibelleCourt = lCause.getShortLabel();
 	}
 
 	protected SocleRuntimeException(final String pCode, final String pLibelleCourt, final String pMessage) {
@@ -80,7 +80,7 @@ public abstract class SocleRuntimeException extends RuntimeException implements 
 		return this.mCode;
 	}
 
-	public String getLibelleCourt() {
+	public String getShortLabel() {
 		return this.mLibelleCourt;
 	}
 

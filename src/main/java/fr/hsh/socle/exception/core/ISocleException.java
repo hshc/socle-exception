@@ -8,9 +8,13 @@ public interface ISocleException {
 
 	public String getCode();
 
-	public String getLibelleCourt();
+	public String getShortLabel();
 
 	public String getMessage();
 
 	public NatureException getNature();
+	
+	public ISocleException prefixMessage(final String pMessage);
+	
+	public ISocleException postfixMessage(final String pMessage);
 }
